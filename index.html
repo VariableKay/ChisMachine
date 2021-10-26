@@ -15,7 +15,7 @@
         <p><input type="submit" value="Submit"></p>
         <p id="confirmedanswer">Answer:</p>
         <script>
-        let question = document.getElementsByName("ChisQuestion").value;
+        var firstName = document.getElementsByName("ChisQuestion")[0].value;
         switch (question) {
               case 151:
                 document.getElementById("confirmedanswer").innerHTML = "D";
