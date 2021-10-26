@@ -8,8 +8,8 @@
 
     <div class="bg-text">
       <h1>I am Yip Mei Fong.</h1>
-      <p>Format: <b>[page number]-[question number]</b></p>
-      <p>Example: <b>15-1</b></p>
+      <p>Format: <b>[page number][question number]</b></p>
+      <p>Example: <b>151 (15th page, 1st question)</b></p>
       <form action="">
         <p><input type="text" id="questioncollector" placeholder="Ask me any question." name="ChisQuestion"></p>
         <p><input type="submit" value="Submit"></p>
@@ -18,7 +18,7 @@
         let question = document.getElementsByName("ChisQuestion").value;
         let answer;
         switch (question) {
-              case '15-1':
+              case 151:
                 document.getElementById("confirmedanswer").innerHTML = "D";
                 break;
               case 1:
