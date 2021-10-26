@@ -13,9 +13,7 @@
       <form action="">
         <p><input type="text" id="questioncollector" placeholder="Ask me any question." name="ChisQuestion"></p>
         <p><input type="submit" value="Submit"></p>
-      </form>
-      <p id="confirmedanswer">Answer:</p>
-      <script>
+        <script>
         let question = document.getElementsByName("ChisQuestion").value;
         let answer;
         switch (question) {
@@ -41,6 +39,8 @@
                 answer = "";
          }
       </script>
+      </form>
+      <p id="confirmedanswer">Answer:</p>
     </div>
   </body>
 </head>
