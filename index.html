@@ -1,45 +1,32 @@
 <!DOCTYPE HTML>
 <head>
   <title>ChisMachine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="">
   <link rel="stylesheet" href="style.css">
+  <style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+</head>
   <body>
     <div class="bg-image"></div>
 
     <div class="bg-text">
       <h1>I am Yip Mei Fong.</h1>
-      <p>Format: <b>[page number][question number]</b></p>
-      <p>Example: <b>151 (15th page, 1st question)</b></p>
-      <form action="">
-        <p><input type="text" id="questioncollector" placeholder="Ask me any question." name="ChisQuestion"></p>
-        <p><input type="submit" value="Submit"></p>
-        <p id="confirmedanswer">Answer:</p>
-        <script>
-        var question = document.getElementsByName("ChisQuestion")[0].value;
-        switch (question) {
-              case 151:
-                document.getElementById("confirmedanswer").innerHTML = "D";
-                break;
-              case 1:
-                answer = "";
-                break;
-              case 2:
-                answer = "";
-                break;
-              case 3:
-                answer = "";
-                break;
-              case 4:
-                answer = "";
-                break;
-              case 5:
-                answer = "";
-                break;
-              case 6:
-                answer = "";
-         }
-      </script>
+      <form action="/answer.pdf">
+        <button class="btn" style="width:100%"><i class="fa fa-download"></i> Download Answers</button>
       </form>
     </div>
   </body>
-</head>
